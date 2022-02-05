@@ -12,7 +12,7 @@ public class MainMenuState : IGameState
 
     public async void Enter()
     {
-        string sceneToLoad = "KarolMainMenu";
+        string sceneToLoad = "TEST";
         SceneManager.LoadScene(sceneToLoad);
         await UniTask.WaitUntil(() => SceneManager.GetActiveScene().name == sceneToLoad);
 
